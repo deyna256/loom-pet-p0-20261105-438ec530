@@ -1,4 +1,6 @@
 name: CI
+# Keep this run-name in every pull_request workflow so Loom can verify the tested revision.
+run-name: "Loom CI ${{ github.ref }} ${{ github.sha }}"
 
 on: [push, pull_request]
 
